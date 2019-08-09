@@ -1,0 +1,24 @@
+body{
+    background-color: #222333;
+    color: #AACCFF;
+    font-family: 'sans-serif';
+    height: 150px;
+    overflow: hidden;
+    border-radius: 5px;
+    -webkit-app-region: drag;
+}
+
+#quote{
+    text-align: center;
+    top: 20px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+#author{
+    text-align: right;
+    font-size: small;
+    font-style: italic;
+    padding: 5px;
+}
