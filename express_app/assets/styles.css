@@ -1,0 +1,17 @@
+body{
+    background: ghostwhite;
+    color: darkgray;
+    font-family: verdana;
+    padding: 20px;
+}
+
+p{
+    font-size: 13px; text-align: center;
+}
+
+h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}

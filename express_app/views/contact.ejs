@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="/assets/styles.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Football reviews | Contact</title>
+  </head>
+  <body>
+    <% include partials/nav.ejs %>
+    <h1> Reviews of all the football matches</h1>
+    <p>Contact us here Mob: +91-9934083433, email: messi@barcelona.com</p>
+
+    <form id="football-contact-form" action="" method="post" accept-charset="utf-8">
+
+      <label for="who">Who do you want to contact?</label>
+      <input type="text" name="company" value="<%= qs.company %>" />
+
+      <label for="department">Which department</label>
+      <input type="text" name="department" value="<%= qs.dept %>" />
+
+      <label for="email">Your email</label>
+      <input type="email" name="email" value="<%= qs.email %>"/>
+
+      <input type="submit" value="submit"/>
+
+    </form>
+  </body>
+</html>

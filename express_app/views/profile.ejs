@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="/assets/styles.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Football reviews</title>
+  </head>
+  <body>
+    <% include partials/nav.ejs %>
+      <h1> Profile of Football Player - <%= person %></h1>
+      <p>Name: <%= person%></p>
+      <p>Age: <%= data.age%></p>
+      <p>Skills: <%= data.skill%></p>
+      <h2>Hobbies</h2>
+      <ul>
+    <% data.hobbies.forEach(function(item){ %>
+        <li><%= item %></li>
+
+    <% }); %>
+      </ul>
+  </body>
+</html>
