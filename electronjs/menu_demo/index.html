@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Menu demo of the ElectronJS</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="photon.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <h1>Menu Demo | ElectronJS Coming out of the Atom Shell</h1>
+    <p>Hello electroners - Showing the menu options </p>
+    <button id="shell_btn">Open</button>
+    <div class="mainWrapper">
+
+      <h2>
+        File CRUD
+      </h2>
+
+      <form action="index_submit" method="get" accept-charset="utf-8">
+        <div class="form-group">
+          <label>File name</label>
+          <input id="filename" type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label>Contents</label>
+          <textarea id="filecontents" class="form-control" rows="5">
+          </textarea>
+        </div>
+        
+      </form>
+
+      <button id="btnCreate" class="btn-default btn">Create</button>
+      <button id="btnRead" class="btn-default btn">Read</button>
+      <button id="btnDelete" class="btn-default btn">Delete</button>
+
+    </div>
+    <div class="tallyconnector">
+      <button id="connectDB" class="btn-default btn">Connect DB</button>
+      <button id="connectTally" class="btn-default btn">Connect Tally</button>
+      <button id="fetchAccount" class="btn-default btn">Fetch Account Details</button>
+      <button id="fetchBalanceSheet" class="btn-default btn">Fetch Balance Sheet</button>
+      <button id="fetchProfitLoss" class="btn-default btn">Fetch Profit Loss</button>
+      
+    </div>
+    <script charset="utf-8">
+      require('./index.js');
+    </script>
+  </body>
+</html>
