@@ -4,13 +4,18 @@
   "description": "electronjs menu tutorial",
   "main": "main.js",
   "scripts": {
+    "postinstall": "install-app-deps",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron ."
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "electron-builder": "^21.2.0",
     "electron": "^6.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "bluebird": "^3.5.5",
+    "sqlite3": "^4.0.9"
+  }
 }

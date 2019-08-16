@@ -1,4 +1,5 @@
 const {connectDB, closeDB} = require('./db_connection')
+const runScripts = require('./run_scripts');
 const electron = require('electron');
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
@@ -39,8 +40,9 @@ function createWindow(){
 // create the window when electron app is ready
 app.on('ready', function(){
   createWindow();
-  connectDB();
-  closeDB();
+  //connectDB();
+  //closeDB();
+  runScripts();
 });
 
 // Let mac windows properly be closed when closed
